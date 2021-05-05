@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+table, 
+th,
+tr, 
+td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+th {
+    text-transform: uppercase;
+}
+
+.container {
+    border: 1px solid black;
+    padding: 10px;
+    display: grid;
+    grid-template-areas: "tl tc tr"
+                         "bl bc br";
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.one {
+    grid-area: tl;
+    background-color: coral;
+}
+
+.two {
+    grid-area: br;
+    background-color: slateblue;
+}
+
+.three {
+    grid-area: tc;
+    background-color: yellow;
+}
+
+.four {
+    grid-area: bl;
+    background-color: orange;
+}
+
+.five {
+    grid-area: tr;
+    background-color: slategray;
+}
+
+.six {
+    grid-area: bc;
+    background-color: burlywood;
+}
