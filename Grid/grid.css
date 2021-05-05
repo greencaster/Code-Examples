@@ -24,17 +24,6 @@ h1 {
     grid-gap: 10px;
 
     border: 1px solid black;
-
-    grid-template-areas: nav nav nav nav nav nav nav nav nav nav 
-                         header header header header header header header header header header 
-                         empty empty top top top top top top top empty empty
-                         empty left left left left empty empty right right right right empty
-                         empty left left left left empty empty right right right right empty
-                         empty left left left left empty empty right right right right empty
-                         empty left left left left empty empty right right right right empty
-                         empty left left left left empty empty right right right right empty
-                         empty empty bottom bottom bottom bottom bottom bottom bottom empty empty
-                         footer footer footer footer footer footer footer footer footer footer;
     
 }
 
@@ -68,23 +57,22 @@ header {
     background-color: orange;
     text-align: center;
     border: 1px solid black;
-    grid-row: 4 / span 5;
-    grid-column: 2 / span 3;
+    grid-area: 4 / 2 / span 5 / span 3;
 }
 
 .right {
     background-color: slateblue;
     text-align: center;
     border: 1px solid black;
-    grid-row: 4 / span 5;
-    grid-column: 7 / span 3;
+    grid-area: 4 / 7 / span 5 / span 3;
 }
 
 .bottom {
     background-color: grey;
     text-align: center;
     border: 1px solid black;
-    grid-area: 9 / 3 / 10 / 9;
+    grid-row: 9 / span 1;
+    grid-column: 3 / span 6;
 }
 
 footer {
